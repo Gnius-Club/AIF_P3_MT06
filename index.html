@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook-P3-TM06</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header>
+        <h1><span class="book-icon">📋</span> <strong>Playbook Sesión 6 3ro Primaria</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+                <li><a href="#activity-5">5</a></li>
+            </ul>
+
+            <div class="sidebar-info">
+                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Sesión Gnius</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos de Aprendizaje:</strong>
+                                    <ul>
+                                        <li>Micro:bit: Bucles (repetir X veces). Operaciones con variables (aumentar/disminuir variable).</li>
+                                        <li>Tu plan (GCS): Usar bucles para repetir acciones (ej. parpadeo, secuencias).</li>
+                                        <li>IA (Conceptual): ¿Cómo la IA puede hacer tareas repetitivas eficientemente?</li>
+                                        <li>Parte de la Currícula de IA (Primaria 3 - AIA y Adaptaciones) cubierta: Preparatorio IA: Bucles como eficiencia.</li>
+                                        <li>Objetivo General de la Sesión: Que los estudiantes aprendan a usar bucles repetir X veces para ejecutar secuencias de acciones múltiples veces y a manipular variables para llevar cuentas o cambiar comportamientos basados en un contador, entendiendo conceptualmente cómo esto se relaciona con la eficiencia en tareas de IA.</li>
+                                    </ul>
+                                    <strong>Secuencia de Clase:</strong>
+                                    <ul>
+                                        <li>⚡ Actividad 1: Saludo de I.A. con todos</li>
+                                        <li>⚡ Actividad 2: I Can Statement + Ejemplificación</li>
+                                        <li>⚡ Actividad 3: AI GYM</li>
+                                        <li>⚡ Actividad 4: Brain Spark</li>
+                                        <li>⚡ Actividad 5: Gnius STORM (Think-Pair-Share)</li>
+                                    </ul>
+                                    <strong>Entregable Clave:</strong>
+                                    <ul>
+                                        <li>Programa en Micro:bit que utiliza bucles `repetir X veces` para una animación o acción repetitiva, y/o manipula variables para crear un contador simple, basado en "tu plan" (GCS) generado con la IA.</li>
+                                        <li>Participación en la discusión sobre la eficiencia de los bucles y la utilidad de las variables.</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos:</strong>
+                                    <ul>
+                                        <li>Proyector o pantalla interactiva.</li>
+                                        <li>Conexión a internet estable.</li>
+                                        <li>Chat de "Agente Gnius" (Xolo) activo.</li>
+                                        <li>Presentación de diapositivas (Diapositivas 1-10).</li>
+                                        <li>Micro:bits y baterías (1 por cada 2 estudiantes).</li>
+                                        <li>Acceso a MakeCode (<a href="https://makecode.microbit.org/" target="_blank">https://makecode.microbit.org/</a>).</li>
+                                    </ul>
+                                    <strong>Preparación Previa para ESTA Sesión:</strong>
+                                    <ol>
+                                        <li><strong>Revisión de Misión (Interna):</strong>
+                                            <ul>
+                                                <li>Verificar conexión a internet.</li>
+                                                <li>Confirmar acceso y funcionamiento de la plataforma de programación del día (MakeCode).</li>
+                                                <li>Asegurar disponibilidad y carga de los dispositivos físicos (Micro:bits).</li>
+                                                <li>Tener la presentación de diapositivas lista y en orden.</li>
+                                                <li>Probar el chat "Agente Gnius" (Xolo) para asegurar su operatividad.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Familiarización:</strong> Revisar el flujo de la sesión, los diálogos sugeridos y los tiempos de cada actividad.</li>
+                                        <li><strong>Ejemplo Profesor:</strong> Tener listo y funcional el proyecto de ejemplo (Micro:bit parpadeando un LED 5 veces con un bucle, y otro con un contador numérico) para la demostración en la Actividad 2.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: Saludo de I.A. con todos ⏰ 3 minutos</h2>
+                <p>El chatbot da la bienvenida y genera entusiasmo por aprender a hacer que el Micro:bit repita acciones y cuente.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Saludo de I.A. con todos ⏰ 0.5 minutos</h3>
+                            <p>(Proyectar Diapositiva 2). Da la bienvenida a los alumnos con energía, introduce brevemente la emoción de la misión del día sin revelar detalles, e instrúyeles claramente cómo activar a Xolo con sus gustos/intereses.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Hola, súper programadores! 👋 Hoy vamos a enseñarle al Micro:bit a ser muy eficiente y a hacer cosas muchas veces sin que tengamos que escribir el mismo código una y otra vez. ¡Y también aprenderemos a llevar la cuenta! Antes de empezar, vamos a activar a nuestro amigo Xolo. Por favor, salúdenlo en el chat y díganle su nombre y cuáles son sus gustos e intereses. Por ejemplo: 'Hola Xolo, soy [Nombre] y mis gustos son [los robots y contar estrellas]'."</p>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Saludo de I.A. con todos ⏰ 2.5 minutos</h3>
+                            <p>Monitorea a los alumnos mientras interactúan con Xolo. Asegúrate de que todos reciban una respuesta y resuelve cualquier problema técnico.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Fantástico! Veo que Xolo ya está listo para esta misión de repeticiones y conteos. Si alguien no ha recibido respuesta de Xolo, levante la mano para ayudarle.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: I Can Statement + Ejemplificación ⏰ 5 minutos</h2>
+                <p>Presentar el objetivo de la clase: usar bucles para repetir y variables para contar.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: I Can Statement + Ejemplificación ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 3). Introduce el concepto principal de la sesión con una analogía o ejemplo del mundo real, preparando el terreno para el objetivo de aprendizaje.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¿Se imaginan tener que escribir 'mostrar corazón' y luego 'limpiar pantalla' cinco veces si quisieran que un corazón parpadeara cinco veces? ¡Sería mucho trabajo! Hoy vamos a descubrir una forma más inteligente de hacerlo.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Descripción General ⏰ 2 minutos</h3>
+                            <p>Muestra TU Micro:bit con TU proyecto de ejemplo ya cargado y funcionando (ej. Micro:bit parpadeando un LED 5 veces con un bucle, y otro donde un número aumenta en pantalla con cada presión de botón). Esta es una demostración en vivo, no se proyecta diapositiva.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Para que vean una de las muchas cosas que podemos hacer hoy, les voy a mostrar dos proyectos que yo mismo preparé. Miren este primer Micro:bit: (Muestra el Micro:bit parpadeando un LED 5 veces). Yo le pedí que hiciera esto sin escribir el código muchas veces. Y miren este otro: (Muestra el Micro:bit con el contador). Cada vez que presiono este botón, el número aumenta. ¿Ven cómo podemos usar los conceptos de hoy para crear animaciones y contadores? Mis 'ideas' fueron: 'Quiero un parpadeo eficiente' y 'Quiero un contador simple'.</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Desglose (Sensores) ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 4). Presenta formalmente el 'I Can Statement' y conecta el ejemplo mostrado con lo que los alumnos crearán.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Así como mis Micro:bits repiten y cuentan, ¡ustedes hoy harán algo muy similar! Al final de la clase, podrán decir con confianza: <strong>"Yo puedo hacer que el Micro:bit repita una acción varias veces y use variables para contar, usando tu plan (el GCS)."</strong> ¡Vamos a ello!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: AI GYM ⏰ 5 minutos</h2>
+                <p>Los alumnos interactúan con Xolo para aprender sobre bucles `repetir X veces` y la manipulación de variables.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: AI GYM ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 5). Presenta el A.I. GYM y da una instrucción clara a los alumnos sobre cómo pedir la información a Xolo, incluyendo su perfil y los conceptos del día.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Genios, es momento de entrar al A.I. GYM! 🧠💪 Xolo, nuestro copiloto IA, nos va a explicar los conceptos clave de hoy: cómo usar el bloque `repetir [NÚMERO] veces` y cómo usar las variables para contar con `aumentar variable` o `disminuir variable`. Para que la explicación sea personalizada para ustedes, escriban en el chat el siguiente comando: 'Mi perfil es [escribe aquí tus gustos/intereses] y quiero que me enseñes sobre el bloque repetir X veces y cómo aumentar o disminuir variables'.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: AI GYM ⏰ 4 minutos</h3>
+                            <p>(Proyectar Diapositivas 6 y 7). Monitorea a los alumnos mientras interactúan con Xolo y reciben la explicación. Fomenta que hagan preguntas de seguimiento.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">(Mientras los alumnos interactúan con Xolo) ¡Excelente! Xolo les está explicando que `repetir [NÚMERO] veces` nos ayuda a no escribir el mismo código muchas veces. También les recordará que las variables son cajitas para guardar números y que hoy las usaremos para contar. Les contará que las IAs usan bucles para ser eficientes, como al revisar miles de fotos, y variables para llevar cuentas.</p>
+                                <p class="dialogue assistant">Para que vean cómo se usan estos conceptos en un plan, Xolo podría mostrarles un ejemplo como este para un parpadeo y otro para un contador simple (como los que usaremos en Brain Spark):</p>
+                                <pre class="dialogue assistant" style="color: #d32f2f;">
+// Ejemplo de Plan para Parpadeo con Bucle
+POR SIEMPRE:
+    SI (botón A presionado):
+        repetir 3 veces:
+            mostrar icono CARA_FELIZ
+            ESPERAR 0.3 segundos
+            mostrar icono CARA_NEUTRA
+            ESPERAR 0.3 segundos
+        FIN REPETIR
+        limpiar pantalla 
+    FIN SI
+
+// Ejemplo de Plan para Contador con Variables
+AL INICIO:
+    fijar variable "puntos" a 0
+    mostrar número variable "puntos"
+
+POR SIEMPRE:
+    SI (botón A presionado):
+        aumentar variable "puntos" en 1
+        mostrar número variable "puntos"
+        ESPERAR 0.2 segundos
+    FIN SI
+                                </pre>
+                                <p class="dialogue assistant">Si algo no queda claro, ¡recuerden que pueden preguntarle directamente a Xolo! Prueben con: <br>
+                                <strong>* 'Xolo, ¿puedo poner un repetir dentro de otro repetir?'</strong><br>
+                                <strong>* '¿Puedes explicarme con una historia sobre [sus gustos/intereses] cómo una IA usa las variables para contar?'</strong><br>
+                                <strong>* '¿Qué otros nombres puedo darle a mis variables?'</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-4">
+                 <h2>⚡ Actividad 4: Brain Spark ⏰ 20 minutos</h2>
+                <p>Los alumnos diseñan y programan un proyecto usando bucles y/o variables (parpadeo o contador).</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Brain Spark ⏰ 1 minutos</h3>
+                            <p>(Proyectar Diapositiva 8). Presenta la actividad como la fase creativa principal de la sesión, generando entusiasmo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Tiempo, genios! Ahora vamos a la parte más emocionante de nuestra misión, el Brain Spark. Aquí es donde cada uno de ustedes se convierte en inventor, usando lo que aprendimos para crear su propio proyecto y probarlo en el mundo real con el Micro:bit.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Brain Spark ⏰ 2 minutos</h3>
+                            <p>Anima a los alumnos a pensar en su propio proyecto, ofreciendo las dos opciones (bucles o variables). El objetivo es la libre exploración de ideas. Recuerda a las parejas que el Micro:bit se comparte y deberán alternar para programar.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                 <p class="dialogue assistant">Ahora que ya saben cómo hacer que el Micro:bit repita cosas y cuente, ¿qué proyecto se les ocurre? Pueden elegir una 'idea' que use bucles (como una animación que parpadea) o una que use variables (como un contador de puntos). O si tienen otra idea, ¡adelante!<br>
+                                 Tómense un minuto para pensar en su 'idea'. Recuerden que están trabajando en parejas, así que decidan juntos el proyecto y quién empezará a programar. Si no se les ocurre nada, ¡no hay problema! Escriban en el chat con Xolo: 'Exploremos ideas juntos para un proyecto con bucles o variables en el Micro:bit', y cuéntenle si les interesa más un parpadeo o un contador para empezar."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Brain Spark ⏰ 3 minutos</h3>
+                            <p>Guía a los alumnos sobre cómo comunicar su idea a Xolo para obtener un plan (GCS). Mientras los alumnos escriben y discuten sus ideas con Xolo, asegúrate de que cada pareja tenga su Micro:bit y recuerden alternar.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¿Ya tienen su 'idea' para el proyecto de repetición o conteo? ¡Genial! Ahora, vamos a pedirle a Xolo que nos ayude a crear el 'plan'. Describan su 'idea' a Xolo de la forma más clara posible. Por ejemplo, si su 'idea' es: "Quiero que mi Micro:bit muestre una animación de una cara que parpadea (feliz-neutra-feliz) 3 veces cuando presiono el botón A."</p>
+                                <p class="dialogue assistant">Basado en esa petición, Xolo podría generar un 'plan' como el que vimos antes en el A.I. GYM para el parpadeo. ¡Fíjense bien en cómo se estructura!</p>
+                                <pre class="dialogue assistant" style="color: #d32f2f;">
+// Ejemplo de Plan para Parpadeo con Bucle:
+POR SIEMPRE:
+    SI (botón A presionado):
+        // Hacemos que la cara parpadee 3 veces
+        repetir 3 veces:
+            mostrar icono CARA_FELIZ
+            ESPERAR 0.3 segundos
+            mostrar icono CARA_NEUTRA // O limpiar pantalla
+            ESPERAR 0.3 segundos
+        FIN REPETIR
+        // Limpiamos la pantalla al final o mostramos algo más
+        limpiar pantalla 
+    FIN SI
+                                </pre>
+                                <p class="dialogue assistant">O si su 'idea' es: "Quiero que mi Micro:bit muestre un número que aumente cada vez que presiono el botón A, y que se reinicie a 0 con el botón B."</p>
+                                <pre class="dialogue assistant" style="color: #d32f2f;">
+// Ejemplo de Plan para Contador con Variables:
+AL INICIO:
+    fijar variable "puntos" a 0
+    mostrar número variable "puntos"
+
+POR SIEMPRE:
+    SI (botón A presionado):
+        aumentar variable "puntos" en 1
+        mostrar número variable "puntos"
+        ESPERAR 0.2 segundos // Para evitar múltiples conteos con una presión
+    FIN SI
+
+    SI (botón B presionado):
+        fijar variable "puntos" a 0
+        mostrar número variable "puntos"
+        ESPERAR 0.2 segundos
+    FIN SI
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 4: Brain Spark ⏰ 13 minutos</h3>
+                            <p>Da tiempo a los alumnos para que traduzcan el plan (GCS) a bloques en MakeCode, prueben en el simulador y luego en el Micro:bit físico. Recordarles alternar el uso del Micro:bit en la pareja.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Manos a la obra, ingenieros! Tomen el 'plan' que les dio Xolo y constrúyanlo con bloques en MakeCode. Identifiquen los bloques de "repetir" o los de "cambiar variable por". Prueben primero en el simulador. Cuando funcione, descarguen el código a su Micro:bit y véanlo cobrar vida. Recuerden que están trabajando en parejas y deben tomar turnos para usar el Micro:bit y la computadora. Si el 'plan' de Xolo no funciona a la primera, ¡es una oportunidad para depurar! Descríbanle el error a Xolo para que puedan mejorar juntos.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 5: Brain Spark ⏰ 1 minutos</h3>
+                            <p>Ofrece desafíos adicionales para los alumnos que terminen antes, basados en la sección 'Mejoras' de la escaleta.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¿Ya terminaron y su proyecto funciona de maravilla? ¡Felicidades! Aquí tienen un desafío extra: Si hicieron el contador, ¿puedes hacer que el contador vaya hacia atrás con el botón B? Si hicieron el parpadeo, ¿puedes hacer que la animación sea más rápida o más lenta? ¡Consulten con Xolo cómo podrían modificar su 'plan' para lograrlo!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-5">
+                <h2>⚡ Actividad 5: Gnius STORM ⏰ 5 minutos</h2>
+                <p>Los alumnos comparten sus proyectos de parpadeo o contadores y reflexionan sobre la utilidad de bucles y variables.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Gnius STORM (Think - Individual) ⏰ 0.5 minutos</h3>
+                            <p>(Proyectar Diapositiva 9). Presenta la actividad como el momento de compartir y celebrar los proyectos, explicando brevemente la dinámica.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Tiempo, creadores! Han hecho un trabajo increíble en el Brain Spark. Ahora es el momento de compartir sus inventos en nuestro Gnius STORM. Esta es la parte donde aprendemos unos de otros. La dinámica será simple: primero pensaremos un poco en nuestro propio trabajo, luego lo compartiremos en parejas, y finalmente reflexionaremos todos juntos. ¿Listos?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Gnius STORM (Pair - Parejas) ⏰ 0.5 minutos</h3>
+                            <p>Da a los alumnos un momento corto para la reflexión individual sobre su propio proyecto.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Perfecto. Antes de mostrar su proyecto, tómense 30 segundos para pensar en silencio. Miren su creación y reflexionen: <strong>¿Qué lograron que hiciera su Micro:bit? ¿Para qué podría ser útil que el Micro:bit repita algo muchas veces? ¿O que lleve la cuenta de algo?</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Gnius STORM (Share - Retroalimentación) ⏰ 1.5 minutos</h3>
+                            <p>Indica a los alumnos que se junten en parejas, intercambien sus dispositivos y expliquen sus proyectos.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Muy bien! Ahora, júntense con su compañero. Por turnos, cada uno va a mostrar su Micro:bit y explicará: <strong>'Mi Micro:bit [describe la acción: parpadea X veces / cuenta hasta X]. La 'idea' que tenía era [explica tu objetivo].'</strong> El compañero debe probar el Micro:bit y escuchar con atención.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 4: Gnius STORM (Reflexión Final) ⏰ 1.5 minutos</h3>
+                            <p>Guía a los alumnos para que se den retroalimentación mutua, usando plantillas de frases para asegurar que sea constructiva.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Ahora, la parte más importante de aprender en equipo: la retroalimentación. Después de ver el proyecto de su compañero, díganle algo positivo y una idea para mejorar. Usen estas frases:<br>
+                                <strong>* 'Lo que más me gustó de tu [animación/contador] fue...'</strong><br>
+                                <strong>* '¡Qué buena 'idea' que el Micro:bit [repita la cara feliz / cuente los puntos]!'</strong><br>
+                                <strong>* 'Una idea para la próxima vez podría ser que [el parpadeo sea de otro icono / el contador también pueda restar]...'</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 5: Gnius STORM (Reflexión Final) ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 10). Cierra la sesión conectando la experiencia práctica con los objetivos de aprendizaje y los conceptos clave del día.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Increíble trabajo, súper programadores! Hoy todos lograron decir: <strong>"Yo puedo hacer que el Micro:bit repita una acción varias veces y use variables para contar, usando tu plan (el GCS)."</strong> Imaginen una IA que juega ajedrez. Tiene que pensar en muchísimas jugadas (repetir el pensamiento) y quizás llevar la cuenta de las piezas. Los bucles y las variables son súper importantes para que las IAs puedan hacer trabajos grandes y complicados de forma eficiente. ¡Felicidades por dominar estas herramientas!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
